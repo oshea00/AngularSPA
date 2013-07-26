@@ -1,7 +1,7 @@
 ﻿'use strict';
 
 myApp.controller('EventDetailController',
-    function EventDetailController($scope, restEventData, $log, $anchorScroll, $routeParams) {
+    function EventDetailController($scope, restEventData, $log, $anchorScroll, $routeParams, $route) {
 
         $scope.sortOrder = 'name';
         $scope.query = '';
@@ -24,6 +24,11 @@ myApp.controller('EventDetailController',
 
         $scope.scrollToSession = function () {
             $anchorScroll();
-        }
+        };
+
+        $scope.reload = function () {
+            $route.reload();
+        };
+
     });
 
