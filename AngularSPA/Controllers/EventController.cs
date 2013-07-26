@@ -12,7 +12,51 @@ namespace AngularSPA.Controllers
         // GET api/event
         public IEnumerable<Event> Get()
         {
-            throw new NotImplementedException();
+            var events = new List<Event> {
+                new Event
+                { id = 1, name = "Angular Boot Camp", date = DateTime.Now, time = "10:30 am", rating = 3.2, 
+                    location = new Location { address = "Google Headquarters", city = "Mountain View", province = "CA", },
+                    imageUrl = "/Content/images/russell_logo.gif",
+                    sessions = new List<Session> {
+                        new Session { 
+                            id = 1,
+                            name = "Directives Masterclass Beginner",
+                            creatorName = "Mike O'Shea",
+                            duration = "1 hour",
+                            level = "advanced",
+                            description = "This is a sample description for the session abstract",
+                            upVoteCount = 10,
+                        },
+                        new Session {
+                            id = 2,
+                            name = "scopes for fun and profit",
+                            level = "beginner",
+                            upVoteCount = 0,
+                        },
+                        new Session {
+                            id = 3,
+                            name = "well-behaved Controllers",
+                            level = "advanced",
+                            upVoteCount = 0,
+                        },
+                    }
+                },
+                new Event
+                { id = 2, name = "Angular Party", date = DateTime.Now, time = "11:30 am", rating = 0.0, 
+                    location = new Location { address = "Google Headquarters", city = "Mountain View", province = "CA", },
+                    imageUrl = "/Content/images/russell_logo.gif",
+                    sessions = new List<Session> {
+                        new Session {
+                            id = 4,
+                            name = "Partying for fun and profit",
+                            level = "advanced",
+                            upVoteCount = 0,
+                        },
+                    }
+                },
+            };
+
+            return events;
         }
 
         // GET api/event/5
