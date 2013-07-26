@@ -60,9 +60,9 @@ myApp.factory('getEventData', function ($http,$q) {
 myApp.factory('restEventData', function ($resource,$q) {
     var resource = $resource('/api/Event/:id', { id: '@id' });
     return {
-        getEvent: function () {
+        getEvent: function (id) {
             var deferred = $q.defer();
-                resource.get({ id: 1 },
+                resource.get({ id: id },
                 function (event) {
                     deferred.resolve(event);
                 },

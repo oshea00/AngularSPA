@@ -225,6 +225,7 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\controllers\CacheSampleController.js" />
     <Content Include="Scripts\controllers\CookieSampleController.js" />
+    <Content Include="Scripts\controllers\EventDetailController.js" />
     <Content Include="Scripts\controllers\EditEventController.js" />
     <Content Include="Scripts\controllers\EventListController.js" />
     <Content Include="Scripts\controllers\HomeController.js" />

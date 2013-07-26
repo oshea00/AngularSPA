@@ -9,10 +9,11 @@ namespace AngularSPA.Controllers
 {
     public class EventController : ApiController
     {
-        // GET api/event
-        public IEnumerable<Event> Get()
+        private List<Event> events { get; set; }
+
+        public EventController()
         {
-            var events = new List<Event> {
+            events = new List<Event> {
                 new Event
                 { id = 1, name = "Angular Boot Camp", date = DateTime.Now, time = "10:30 am", rating = 3.2, 
                     location = new Location { address = "Google Headquarters", city = "Mountain View", province = "CA", },
@@ -55,53 +56,18 @@ namespace AngularSPA.Controllers
                     }
                 },
             };
+        }
 
+        // GET api/event
+        public IEnumerable<Event> Get()
+        {
             return events;
         }
 
         // GET api/event/5
         public Event Get(int id)
         {
-            var myevent = new Event
-            {
-                id = 1,
-                name = "Angular Boot Camp",
-                date = DateTime.Now,
-                time = "10:30 am",
-                rating = 3.2,
-                location = new Location
-                {
-                    address = "Google Headquarters",
-                    city = "Mountain View",
-                    province = "CA",
-                },
-                imageUrl = "/Content/images/angular.png",
-                sessions = new List<Session> {
-                    new Session { 
-                        id = 1,
-                        name = "Directives Masterclass Beginner",
-                        creatorName = "Mike O'Shea",
-                        duration = "1 hour",
-                        level = "advanced",
-                        description = "This is a sample description for the session abstract",
-                        upVoteCount = 10,
-                    },
-                    new Session {
-                        id = 2,
-                        name = "scopes for fun and profit",
-                        level = "beginner",
-                        upVoteCount = 0,
-                    },
-                    new Session {
-                        id = 3,
-                        name = "well-behaved Controllers",
-                        level = "advanced",
-                        upVoteCount = 0,
-                    },
-                }
-            };
-
-            return myevent;
+            return events.Where(e => e.id == id).FirstOrDefault();
         }
 
         // POST api/event
