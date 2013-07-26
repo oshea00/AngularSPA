@@ -1,7 +1,7 @@
 ﻿'use strict';
 
 // Earlier example that returned some example data
-eventsApp.factory('eventData', function () {
+myApp.factory('eventData', function () {
     return {
         event: {
             name: "Angular Boot Camp",
@@ -39,7 +39,7 @@ eventsApp.factory('eventData', function () {
 });
 
 // Example: Using this now to get example data from controller
-eventsApp.factory('getEventData', function ($http,$q) {
+myApp.factory('getEventData', function ($http,$q) {
     return {
         getEvent: function () {
             var deferred = $q.defer();
@@ -57,7 +57,7 @@ eventsApp.factory('getEventData', function ($http,$q) {
 });
 
 // Example: Using this now to get example data from controller - via $resource service
-eventsApp.factory('restEventData', function ($resource,$q) {
+myApp.factory('restEventData', function ($resource,$q) {
     var resource = $resource('/api/Event/:id', { id: '@id' });
     return {
         getEvent: function () {
