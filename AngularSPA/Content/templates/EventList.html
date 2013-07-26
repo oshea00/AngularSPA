@@ -1,0 +1,16 @@
+﻿<div>
+    <h1>Events</h1>
+    <br />
+    <br />
+    <ul class="thumbnails">
+        <li ng-repeat="event in events | orderBy:sortOrder" class="span5">
+            <div class="well hoverwell">
+                <div class="row"><h2 class="span6">{{event.name}}</h2></div>
+                <div class="row"><span class="span1">{{event.date}}</span></div>
+                <div class="row"><span class="span1">{{event.time}}</span></div>
+                <div class="row"><span class="span1">{{event.location.address}}</span></div>
+                <div class="row"><span class="span1">{{event.location.city}}, {{event.location.province}}</span></div>
+            </div>
+        </li>
+    </ul>
+</div>
