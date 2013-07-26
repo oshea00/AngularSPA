@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-myApp.controller('EventController',
+myApp.controller('EditEventController',
     function EditEventController($scope, restEventData, $timeout) {
 
         var promise = $timeout(function () {
