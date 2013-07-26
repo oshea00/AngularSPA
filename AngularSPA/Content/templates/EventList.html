@@ -3,14 +3,14 @@
     <br />
     <br />
     <ul class="thumbnails">
-        <li ng-repeat="event in events | orderBy:sortOrder" class="span5">
-            <div class="well hoverwell">
-                <div class="row"><h2 class="span6">{{event.name}}</h2></div>
+        <li ng-repeat="event in events | orderBy:sortOrder" class="span6">
+            <a href="#" class="well thumbnail">
+                <div class="row"><h3 class="span6">{{event.name}}</h3></div>
                 <div class="row"><span class="span2">{{event.date | date:'MM-dd-yyyy'}}</span></div>
                 <div class="row"><span class="span1">{{event.time}}</span></div>
-                <div class="row"><span class="span6">{{event.location.address}}</span></div>
-                <div class="row"><span class="span6">{{event.location.city}}, {{event.location.province}}</span></div>
-            </div>
+                <div class="row"><span class="span3">{{event.location.address}}</span></div>
+                <div class="row"><span class="span3">{{event.location.city}}, {{event.location.province}}</span></div>
+            </a>
         </li>
     </ul>
 </div>
