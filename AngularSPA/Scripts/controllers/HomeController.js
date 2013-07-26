@@ -21,5 +21,7 @@ myApp.filter('aspdate2jsdate', function () {
 myApp.controller('HomeController',
     function HomeController($scope, restEventData, $log, $anchorScroll) {
 
+        $scope.name = "Mike";
+
     });
 

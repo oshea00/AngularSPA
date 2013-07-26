@@ -17,6 +17,10 @@ var myApp = angular.module('myApp', ['ngResource'])
                 templateUrl: '/Content/templates/EventDetail.html',
                 controller: 'EventDetailController'
             });
+        $routeProvider.when('/hello',
+            {
+                template: '<h3>Hello World</h3>'
+            });
         $routeProvider.otherwise({ redirectTo: '/events' });
         $locationProvider.html5Mode(true);
     });
