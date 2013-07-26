@@ -12,4 +12,9 @@ var myApp = angular.module('myApp', ['ngResource'])
                 templateUrl: '/Content/templates/EventList.html',
                 controller: 'EventListController'
             });
+        $routeProvider.when('/',
+            {
+                templateUrl: '/Content/templates/EventDetail.html',
+                controller: 'HomeController'
+            });
     });

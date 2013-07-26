@@ -16,7 +16,7 @@ namespace AngularSPA.Controllers
                 new Event
                 { id = 1, name = "Angular Boot Camp", date = DateTime.Now, time = "10:30 am", rating = 3.2, 
                     location = new Location { address = "Google Headquarters", city = "Mountain View", province = "CA", },
-                    imageUrl = "/Content/images/russell_logo.gif",
+                    imageUrl = "/Content/images/angular.png",
                     sessions = new List<Session> {
                         new Session { 
                             id = 1,
@@ -44,7 +44,7 @@ namespace AngularSPA.Controllers
                 new Event
                 { id = 2, name = "Angular Party", date = DateTime.Now, time = "11:30 am", rating = 0.0, 
                     location = new Location { address = "Google Headquarters", city = "Mountain View", province = "CA", },
-                    imageUrl = "/Content/images/russell_logo.gif",
+                    imageUrl = "/Content/images/angular.png",
                     sessions = new List<Session> {
                         new Session {
                             id = 4,
@@ -75,7 +75,7 @@ namespace AngularSPA.Controllers
                     city = "Mountain View",
                     province = "CA",
                 },
-                imageUrl = "/Content/images/russell_logo.gif",
+                imageUrl = "/Content/images/angular.png",
                 sessions = new List<Session> {
                     new Session { 
                         id = 1,

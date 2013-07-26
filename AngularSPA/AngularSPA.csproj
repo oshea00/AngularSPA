@@ -141,8 +141,12 @@
     <Content Include="Content\bootstrap-responsive.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\angular.png" />
     <Content Include="Content\images\glyphicons-halflings-white.png" />
     <Content Include="Content\images\glyphicons-halflings.png" />
+    <Content Include="Content\images\russell_logo.gif" />
+    <Content Include="Content\images\unicorn.png" />
+    <Content Include="Content\templates\EventDetail.html" />
     <Content Include="Content\templates\EventList.html" />
     <Content Include="Content\templates\NewEvent.html" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -222,7 +226,6 @@
     <Content Include="Scripts\controllers\CacheSampleController.js" />
     <Content Include="Scripts\controllers\CookieSampleController.js" />
     <Content Include="Scripts\controllers\EditEventController.js" />
-    <Content Include="Scripts\controllers\EventController.js" />
     <Content Include="Scripts\controllers\EventListController.js" />
     <Content Include="Scripts\controllers\HomeController.js" />
     <Content Include="Scripts\i18n\angular-locale_af-na.js" />
