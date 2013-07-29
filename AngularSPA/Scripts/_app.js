@@ -15,7 +15,15 @@ var myApp = angular.module('myApp', ['ngResource'])
         $routeProvider.when('/event/:id',
             {
                 templateUrl: '/Content/templates/EventDetail.html',
-                controller: 'EventDetailController'
+                controller: 'EventDetailController',
+                resolve: {
+                    event: function ($q, $route, restEventData) {
+                        var deferred = $q.defer();
+                        restEventData.getEvent($route.current.pathParams.id)
+                            .then(function (event) { deferred.resolve(event); });
+                        return deferred.promise;
+                    }
+                }
             });
         $routeProvider.when('/hello',
             {

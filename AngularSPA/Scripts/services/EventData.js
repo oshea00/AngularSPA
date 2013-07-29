@@ -57,11 +57,12 @@ myApp.factory('getEventData', function ($http,$q) {
 });
 
 // Example: Using this now to get example data from controller - via $resource service
-myApp.factory('restEventData', function ($resource,$q) {
+myApp.factory('restEventData', function ($resource,$q,$timeout) {
     var resource = $resource('/api/Event/:id', { id: '@id' });
     return {
         getEvent: function (id) {
             var deferred = $q.defer();
+            $timeout(function () {
                 resource.get({ id: id },
                 function (event) {
                     deferred.resolve(event);
@@ -70,6 +71,7 @@ myApp.factory('restEventData', function ($resource,$q) {
                     $log.log(data, status, headers, config);
                     deferred.reject(status);
                 });
+            }, 3); // simulate a delay
             return deferred.promise;
         },
         save: function (event) {
