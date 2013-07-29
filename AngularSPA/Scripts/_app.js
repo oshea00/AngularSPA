@@ -29,6 +29,11 @@ var myApp = angular.module('myApp', ['ngResource'])
             {
                 template: '<h3>Hello World</h3>'
             });
-        $routeProvider.otherwise({ redirectTo: '/events' });
+        $routeProvider.when('/sampleDirective',
+            {
+                templateUrl: '/Content/templates/SampleDirective.html',
+                controller: 'SampleDirectiveController'
+            });
+        $routeProvider.otherwise({ redirectTo: '/' });
         $locationProvider.html5Mode(true);
     });

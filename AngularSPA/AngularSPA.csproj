@@ -149,6 +149,7 @@
     <Content Include="Content\templates\EventDetail.html" />
     <Content Include="Content\templates\EventList.html" />
     <Content Include="Content\templates\NewEvent.html" />
+    <Content Include="Content\templates\SampleDirective.html" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -230,6 +231,7 @@
     <Content Include="Scripts\controllers\EventListController.js" />
     <Content Include="Scripts\controllers\HomeController.js" />
     <Content Include="Scripts\controllers\MainMenuController.js" />
+    <Content Include="Scripts\controllers\SampleDirectiveController.js" />
     <Content Include="Scripts\i18n\angular-locale_af-na.js" />
     <Content Include="Scripts\i18n\angular-locale_af-za.js" />
     <Content Include="Scripts\i18n\angular-locale_af.js" />
@@ -538,6 +540,7 @@
     <Content Include="Scripts\underscore.js" />
     <Content Include="Scripts\underscore.min.js" />
     <Content Include="Scripts\_app.js" />
+    <Content Include="Scripts\_directives.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
