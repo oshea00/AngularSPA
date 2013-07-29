@@ -232,6 +232,7 @@
     <Content Include="Scripts\controllers\HomeController.js" />
     <Content Include="Scripts\controllers\MainMenuController.js" />
     <Content Include="Scripts\controllers\SampleDirectiveController.js" />
+    <Content Include="Scripts\directives\mySample.js" />
     <Content Include="Scripts\i18n\angular-locale_af-na.js" />
     <Content Include="Scripts\i18n\angular-locale_af-za.js" />
     <Content Include="Scripts\i18n\angular-locale_af.js" />
@@ -540,7 +541,6 @@
     <Content Include="Scripts\underscore.js" />
     <Content Include="Scripts\underscore.min.js" />
     <Content Include="Scripts\_app.js" />
-    <Content Include="Scripts\_directives.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

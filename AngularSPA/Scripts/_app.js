@@ -34,6 +34,6 @@ var myApp = angular.module('myApp', ['ngResource'])
                 templateUrl: '/Content/templates/SampleDirective.html',
                 controller: 'SampleDirectiveController'
             });
-        $routeProvider.otherwise({ redirectTo: '/' });
+        $routeProvider.otherwise({ redirectTo: '/listEvents' });
         $locationProvider.html5Mode(true);
     });
