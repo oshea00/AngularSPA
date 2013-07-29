@@ -37,17 +37,7 @@ Show:
 <ul class="thumbnails">
     <li ng-repeat="session in event.sessions | orderBy:sortOrder | filter:query" id="session{{session.id}}">
         <div class="row">
-            <div class="span0 well votingWidget" style="width: 15px;">
-                <div class="votingButton" ng-click="upVoteSession(session)" style="width: 0px; margin: 0 auto;">
-                    <i class="icon-chevron-up icon-white"></i>
-                </div>
-                <div class="badge badge-inverse">
-                    <div>{{session.upVoteCount}}</div>
-                </div>
-                <div class="votingButton" ng-click="downVoteSession(session)" style="width: 0px; margin: 0 auto;">
-                    <i class="icon-chevron-down icon-white"></i>
-                </div>
-            </div>
+            <upvote upvote="upVoteSession(session)" downvote="downVoteSession(session)" count="session.upVoteCount"/>
             <div class="well span9">
                 <h4 class="well-title">{{session.name | firstupper}}</h4>
                 <h6 style="margin-top:-10px">{{session.creatorName}}</h6>

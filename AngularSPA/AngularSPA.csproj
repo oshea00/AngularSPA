@@ -146,6 +146,8 @@
     <Content Include="Content\images\glyphicons-halflings.png" />
     <Content Include="Content\images\russell_logo.gif" />
     <Content Include="Content\images\unicorn.png" />
+    <Content Include="Content\templates\directives\EventThumbnail.html" />
+    <Content Include="Content\templates\directives\Upvote.html" />
     <Content Include="Content\templates\EventDetail.html" />
     <Content Include="Content\templates\EventList.html" />
     <Content Include="Content\templates\NewEvent.html" />
@@ -232,7 +234,10 @@
     <Content Include="Scripts\controllers\HomeController.js" />
     <Content Include="Scripts\controllers\MainMenuController.js" />
     <Content Include="Scripts\controllers\SampleDirectiveController.js" />
+    <Content Include="Scripts\directives\datekeys.js" />
+    <Content Include="Scripts\directives\eventThumbnail.js" />
     <Content Include="Scripts\directives\mySample.js" />
+    <Content Include="Scripts\directives\Upvote.js" />
     <Content Include="Scripts\i18n\angular-locale_af-na.js" />
     <Content Include="Scripts\i18n\angular-locale_af-za.js" />
     <Content Include="Scripts\i18n\angular-locale_af.js" />
@@ -577,7 +582,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>7227</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
