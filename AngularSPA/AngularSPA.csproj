@@ -236,6 +236,7 @@
     <Content Include="Scripts\controllers\SampleDirectiveController.js" />
     <Content Include="Scripts\directives\datekeys.js" />
     <Content Include="Scripts\directives\eventThumbnail.js" />
+    <Content Include="Scripts\directives\greeting.js" />
     <Content Include="Scripts\directives\mySample.js" />
     <Content Include="Scripts\directives\observe.js" />
     <Content Include="Scripts\directives\Upvote.js" />
@@ -561,6 +562,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\underscore.min.map" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\DirectiveSample.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -583,13 +585,11 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>False</UseIIS>
+          <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>7227</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:57465/</IISUrl>
-          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
-          <IISAppRootUrl>http://localhost:57465/</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
