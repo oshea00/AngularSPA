@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-eventsApp.controller('CacheSampleController',
+myApp.controller('CacheSampleController',
     function CacheSampleController($scope,myCache) {
 
         $scope.addToCache = function (key, value) {

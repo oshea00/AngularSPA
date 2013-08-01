@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-eventsApp.controller('CookieSampleController',
+myApp.controller('CookieSampleController',
     function CookieSampleController($scope,$cookieStore) {
 
         $scope.event = { id: 1, name: 'My Event' };

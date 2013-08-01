@@ -238,6 +238,7 @@
     <Content Include="Content\themes\ui-darkness\images\ui-icons_ffffff_256x240.png" />
     <Content Include="Content\themes\ui-darkness\jquery-ui-1.10.3.custom.css" />
     <Content Include="Content\themes\ui-darkness\jquery-ui-1.10.3.custom.min.css" />
+    <Content Include="css\jasmine.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\angular-bootstrap-prettify.js" />
@@ -563,6 +564,8 @@
     <Content Include="Scripts\i18n\angular-locale_zu-za.js" />
     <Content Include="Scripts\i18n\angular-locale_zu.js" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\jasmine-html.js" />
+    <Content Include="Scripts\jasmine.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
@@ -581,6 +584,8 @@
     <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\services\EventData.js" />
+    <Content Include="Scripts\sinon-1.7.3.js" />
+    <Content Include="Scripts\tests\generic.js" />
     <Content Include="Scripts\underscore.js" />
     <Content Include="Scripts\underscore.min.js" />
     <Content Include="Scripts\_app.js" />
