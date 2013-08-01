@@ -39,11 +39,12 @@ Show:
         <div class="row">
             <upvote upvote="upVoteSession(session)" downvote="downVoteSession(session)" count="session.upVoteCount"/>
             <div class="well span9">
-                <h4 class="well-title">{{session.name | firstupper}}</h4>
-                <h6 style="margin-top:-10px">{{session.creatorName}}</h6>
-                <span>Duration: {{session.duration}}</span></br/>
-                <span>Level: {{session.level}}</span></br/>
-                <p>{{session.description}}</p>
+                <collapsible name="{{session.name | firstupper}}">
+                    <h6 style="margin-top:-10px">{{session.creatorName}}</h6>
+                    <span>Duration: {{session.duration}}</span></br/>
+                    <span>Level: {{session.level}}</span></br/>
+                    <p>{{session.description}}</p>
+                </collapsible>
             </div>
         </div>
     </li>

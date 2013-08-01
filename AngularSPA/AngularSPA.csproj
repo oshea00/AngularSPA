@@ -206,6 +206,38 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Content\themes\images\animated-overlay.gif" />
+    <Content Include="Content\themes\images\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="Content\themes\images\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="Content\themes\images\ui-bg_glass_20_555555_1x400.png" />
+    <Content Include="Content\themes\images\ui-bg_glass_40_0078a3_1x400.png" />
+    <Content Include="Content\themes\images\ui-bg_glass_40_ffc73d_1x400.png" />
+    <Content Include="Content\themes\images\ui-bg_gloss-wave_25_333333_500x100.png" />
+    <Content Include="Content\themes\images\ui-bg_highlight-soft_80_eeeeee_1x100.png" />
+    <Content Include="Content\themes\images\ui-bg_inset-soft_25_000000_1x100.png" />
+    <Content Include="Content\themes\images\ui-bg_inset-soft_30_f58400_1x100.png" />
+    <Content Include="Content\themes\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\images\ui-icons_4b8e0b_256x240.png" />
+    <Content Include="Content\themes\images\ui-icons_a83300_256x240.png" />
+    <Content Include="Content\themes\images\ui-icons_cccccc_256x240.png" />
+    <Content Include="Content\themes\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\themes\ui-darkness\images\animated-overlay.gif" />
+    <Content Include="Content\themes\ui-darkness\images\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="Content\themes\ui-darkness\images\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="Content\themes\ui-darkness\images\ui-bg_glass_20_555555_1x400.png" />
+    <Content Include="Content\themes\ui-darkness\images\ui-bg_glass_40_0078a3_1x400.png" />
+    <Content Include="Content\themes\ui-darkness\images\ui-bg_glass_40_ffc73d_1x400.png" />
+    <Content Include="Content\themes\ui-darkness\images\ui-bg_gloss-wave_25_333333_500x100.png" />
+    <Content Include="Content\themes\ui-darkness\images\ui-bg_highlight-soft_80_eeeeee_1x100.png" />
+    <Content Include="Content\themes\ui-darkness\images\ui-bg_inset-soft_25_000000_1x100.png" />
+    <Content Include="Content\themes\ui-darkness\images\ui-bg_inset-soft_30_f58400_1x100.png" />
+    <Content Include="Content\themes\ui-darkness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\ui-darkness\images\ui-icons_4b8e0b_256x240.png" />
+    <Content Include="Content\themes\ui-darkness\images\ui-icons_a83300_256x240.png" />
+    <Content Include="Content\themes\ui-darkness\images\ui-icons_cccccc_256x240.png" />
+    <Content Include="Content\themes\ui-darkness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\themes\ui-darkness\jquery-ui-1.10.3.custom.css" />
+    <Content Include="Content\themes\ui-darkness\jquery-ui-1.10.3.custom.min.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\angular-bootstrap-prettify.js" />
@@ -234,7 +266,10 @@
     <Content Include="Scripts\controllers\HomeController.js" />
     <Content Include="Scripts\controllers\MainMenuController.js" />
     <Content Include="Scripts\controllers\SampleDirectiveController.js" />
+    <Content Include="Scripts\directives\collapsible.js" />
     <Content Include="Scripts\directives\datekeys.js" />
+    <Content Include="Scripts\directives\datePicker.js" />
+    <Content Include="Scripts\directives\directiveCompile.js" />
     <Content Include="Scripts\directives\eventThumbnail.js" />
     <Content Include="Scripts\directives\greeting.js" />
     <Content Include="Scripts\directives\mySample.js" />
@@ -532,6 +567,7 @@
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-ui-1.10.3.custom.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
@@ -563,6 +599,7 @@
     <Content Include="Scripts\underscore.min.map" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\DirectiveSample.cshtml" />
+    <Content Include="Views\Home\DirectiveCompile.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -21,5 +21,10 @@ namespace AngularSPA.Controllers
             return View();
         }
 
+        public ActionResult DirectiveCompile()
+        {
+            return View();
+        }
+
     }
 }
