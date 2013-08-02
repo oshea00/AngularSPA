@@ -2,7 +2,7 @@
     return {
         restrict: 'E',
         replace: true,
-        templateUrl: '/Content/templates/directives/EventThumbnail.html',
+        templateUrl: 'Content/templates/directives/EventThumbnail.html',
         scope: {
             event: "=event"
         }
