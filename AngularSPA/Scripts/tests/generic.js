@@ -4,9 +4,5 @@ describe("test framework", function() {
         expect(true).toBe(true);
 
     });
-    it("runs a second test", function () {
-        expect(true).toBe(true);
-
-    });
 });
 

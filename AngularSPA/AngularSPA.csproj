@@ -583,8 +583,11 @@
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\services\calculator.js" />
     <Content Include="Scripts\services\EventData.js" />
     <Content Include="Scripts\sinon-1.7.3.js" />
+    <Content Include="Scripts\tests\SimpleServiceSpec.js" />
+    <Content Include="Scripts\tests\EventListControllerSpec.js" />
     <Content Include="Scripts\tests\generic.js" />
     <Content Include="Scripts\underscore.js" />
     <Content Include="Scripts\underscore.min.js" />
