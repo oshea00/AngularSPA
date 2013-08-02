@@ -3,7 +3,7 @@
 
 
 // base path, that will be used to resolve files and exclude
-basePath = 'c:/projects';
+basePath = 'e:/src';
 
 
 // list of files / patterns to load in the browser
@@ -15,6 +15,8 @@ files = [
   'AngularSPA/AngularSPA/Scripts/bootstrap.js',
   'AngularSPA/AngularSPA/Scripts/underscore.js',
   'AngularSPA/AngularSPA/Scripts/angular.js',
+  'AngularSPA/AngularSPA/Scripts/angular-mocks.js',
+  'AngularSPA/AngularSPA/Scripts/angular-resource.js',
   'AngularSPA/AngularSPA/Scripts/_app.js',
   'AngularSPA/AngularSPA/Scripts/tests/*.js',
   'AngularSPA/AngularSPA/Scripts/services/*.js',
