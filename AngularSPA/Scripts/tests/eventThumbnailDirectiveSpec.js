@@ -17,7 +17,7 @@ describe('eventThumbnail', function () {
 
     beforeEach(inject(function ($rootScope, $compile) {
         compile = $compile;
-        scope = $rootScope.$new();
+        scope = $rootScope;
     }));
 
     it('should bind the data', function () {
@@ -36,6 +36,7 @@ describe('eventThumbnail', function () {
 
         compile(el)(scope);
         scope.$digest();
+        //console.log(el[0].outerHTML);
         expect(el.text()).toContain('Angular Boot Camp');
         expect(el.text).not.toBeUndefined();
     });
