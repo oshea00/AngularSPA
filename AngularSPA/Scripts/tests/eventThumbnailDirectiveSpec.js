@@ -15,12 +15,6 @@ describe('eventThumbnail', function () {
 
     beforeEach(module('myApp'));
 
-    beforeEach(function () {
-
-        var text = " stub ";
-
-    });
-
     beforeEach(inject(function ($rootScope, $compile) {
         compile = $compile;
         scope = $rootScope.$new();
@@ -45,8 +39,5 @@ describe('eventThumbnail', function () {
         expect(el.text()).toContain('Angular Boot Camp');
         expect(el.text).not.toBeUndefined();
     });
-
-
-
 
 });
