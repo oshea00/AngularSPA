@@ -146,7 +146,6 @@
     <Content Include="Content\images\glyphicons-halflings.png" />
     <Content Include="Content\images\russell_logo.gif" />
     <Content Include="Content\images\unicorn.png" />
-    <Content Include="Content\templates\directives\EventThumbnail.html" />
     <Content Include="Content\templates\directives\Upvote.html" />
     <Content Include="Content\templates\EventDetail.html" />
     <Content Include="Content\templates\EventList.html" />

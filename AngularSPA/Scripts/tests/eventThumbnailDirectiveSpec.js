@@ -9,12 +9,24 @@
 
 describe('eventThumbnail', function () {
     var el;
+    var scope;
+    var compile;
+    var httpBackend;
 
     beforeEach(module('myApp'));
-    beforeEach(module('Content/templates/directives/EventThumbnail.html'));
 
-    beforeEach(inject(function ($compile, $rootScope) {
-        var scope = $rootScope;
+    beforeEach(function () {
+
+        var text = " stub ";
+
+    });
+
+    beforeEach(inject(function ($rootScope, $compile) {
+        compile = $compile;
+        scope = $rootScope.$new();
+    }));
+
+    it('should bind the data', function () {
         scope.event = {
             name: "Angular Boot Camp",
             date: new Date(),
@@ -27,12 +39,14 @@ describe('eventThumbnail', function () {
         }
 
         el = angular.element('<event-thumbnail event="event" />');
-        $compile(el)(scope);
+
+        compile(el)(scope);
         scope.$digest();
-
-    }));
-
-    it('should bind the data', function () {
-        expect(el.text()).toContain('Event Name');
+        expect(el.text()).toContain('Angular Boot Camp');
+        expect(el.text).not.toBeUndefined();
     });
+
+
+
+
 });
