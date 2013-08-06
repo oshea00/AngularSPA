@@ -11,6 +11,7 @@ Packages
 *~
 *.swp
 _ReSharper*
+_Chutzpah*
 *.db
 *.orig
 *.rej

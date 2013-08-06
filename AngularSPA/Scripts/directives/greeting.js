@@ -14,6 +14,7 @@ myApp.directive('greeting', function () {
             };
             this.addGreeting = function (greeting) {
                 greetings.push(greeting);
+                $scope.greeting = greetings.join();
             }
 
         }

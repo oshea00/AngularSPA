@@ -27,4 +27,8 @@ describe('greeting directive Spec', function () {
         expect(el.text).not.toBeUndefined();
     });
 
+    it('sub directives should fire parent controller', function () {
+        expect(scope.greeting).toEqual("hello,hei,नमस्ते");
+    });
+
 });
