@@ -586,6 +586,7 @@
     <Content Include="Scripts\services\wordcalc.js" />
     <Content Include="Scripts\sinon-1.7.3.js" />
     <Content Include="Scripts\tests\ComplexServiceSpec.js" />
+    <Content Include="Scripts\tests\GreetingDirectiveSpec.js" />
     <Content Include="Scripts\tests\EventDataServiceSpec.js" />
     <Content Include="Scripts\tests\eventThumbnailDirectiveSpec.js" />
     <Content Include="Scripts\tests\filterSpecs.js" />

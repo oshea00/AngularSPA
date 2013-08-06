@@ -10,17 +10,11 @@
 describe('eventThumbnail directive Spec', function () {
     var el;
     var scope;
-    var compile;
-    var httpBackend;
 
     beforeEach(module('myApp'));
 
     beforeEach(inject(function ($rootScope, $compile) {
-        compile = $compile;
         scope = $rootScope;
-    }));
-
-    it('should bind the data', function () {
         scope.event = {
             name: "Angular Boot Camp",
             date: new Date(),
@@ -31,14 +25,14 @@ describe('eventThumbnail directive Spec', function () {
                 province: 'CA'
             }
         }
-
         el = angular.element('<event-thumbnail event="event" />');
-
-        compile(el)(scope);
+        $compile(el)(scope);
         scope.$digest();
         //console.log(el[0].outerHTML);
+    }));
+
+    it('should bind the data', function () {
         expect(el.text()).toContain('Angular Boot Camp');
-        expect(el.text).not.toBeUndefined();
     });
 
 });

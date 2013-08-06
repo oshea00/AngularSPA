@@ -8,6 +8,7 @@ myApp.directive('greeting', function () {
         template: "<button class='btn' ng-click='sayGreeting()'>Say Hello</button>",
         controller: function ($scope) {
             var greetings = ['hello'];
+            $scope.greeting = greetings.join();
             $scope.sayGreeting = function () {
                 alert(greetings.join());
             };
