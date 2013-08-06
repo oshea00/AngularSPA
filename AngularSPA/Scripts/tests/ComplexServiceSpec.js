@@ -7,34 +7,33 @@
 /// <reference path="../services/calculator.js" />
 'use strict';
 
-describe('Complex Service Spec', function () {
-    var mockCalculator;
+    describe('Complex Service Spec', function () {
+        var mockCalculator;
 
-    beforeEach(module('myApp'));
+        beforeEach(module('myApp'));
 
-    beforeEach(function () {
-        mockCalculator = sinon.stub({ add: function () { } });
-        module(function ($provide) {
-            $provide.value('calculator', mockCalculator);
+        beforeEach(function () {
+            mockCalculator = sinon.stub({ add: function () { } });
+            module(function ($provide) {
+                $provide.value('calculator', mockCalculator);
+            });
         });
+
+        it('should call calculator.add with 1 and 2', inject(function (wordcalc) {
+            wordcalc.addWord(1, 2);
+
+            expect(mockCalculator.add.args[0][0]).toEqual(1);
+            expect(mockCalculator.add.args[0][1]).toEqual(2);
+
+        }));
+
+
+        it('should return one plus two = 3', inject(function (wordcalc) {
+            mockCalculator.add.returns(3);
+            var result = wordcalc.addWord(1, 2);
+
+            expect(result).toEqual('one plus two = 3');
+        }));
+
     });
-
-    it('should call calculator.add with 1 and 2', inject(function (wordcalc) {
-        wordcalc.addWord(1, 2);
-
-        expect(mockCalculator.add.args[0][0]).toEqual(1);
-        expect(mockCalculator.add.args[0][1]).toEqual(2);
-
-    }));
-
-
-    it('should return one plus two = 3', inject(function (wordcalc) {
-        mockCalculator.add.returns(3);
-        var result = wordcalc.addWord(1, 2);
-
-        expect(result).toEqual('one plus two = 3');
-    }));
-
-});
-
 

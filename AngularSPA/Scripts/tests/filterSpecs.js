@@ -3,10 +3,10 @@
 /// <reference path="../angular-mocks.js" />
 /// <reference path="../_app.js" />
 /// <reference path="../sinon-1.7.3.js" />
-/// <reference path="../controllers/HomeController.js" />
+/// <reference path="../filters/firstupper.js" />
 'use strict';
 
-describe('firstupper Spec', function () {
+describe('firstupper filter Spec', function () {
 
     beforeEach(module('myApp'));
 

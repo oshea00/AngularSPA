@@ -7,7 +7,7 @@
 
 'use strict';
 
-describe('eventThumbnail', function () {
+describe('eventThumbnail directive Spec', function () {
     var el;
     var scope;
     var compile;
