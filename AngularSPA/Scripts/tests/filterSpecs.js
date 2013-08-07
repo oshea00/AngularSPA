@@ -22,8 +22,12 @@ describe('aspdate2jsdate filter Spec', function () {
     beforeEach(module('myApp'));
 
     it('should return valid JS date', inject(function (aspdate2jsdateFilter) {
-        expect(aspdate2jsdateFilter('/Date(1337878800000+0700)/').toLocaleDateString())
-            .toEqual('Thursday, May 24, 2012');
+        // Thursday, May 24 2012
+        var jsdate = aspdate2jsdateFilter('/Date(1337878800000+0700)/');
+        expect(jsdate.getDay()).toEqual(4);
+        expect(jsdate.getMonth()).toEqual(4);
+        expect(jsdate.getDate()).toEqual(24);
+        expect(jsdate.getFullYear()).toEqual(2012);
     }))
 
 });
