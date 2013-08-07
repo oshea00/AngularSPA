@@ -11,14 +11,26 @@ describe('EventDataServiceSpec', function () {
 
     beforeEach(module('myApp'));
 
-    describe('getEvent', function () {
+    it('should issue a GET request to /api/event/1 when id is 1', inject(function (restEventData, $httpBackend) {
+        $httpBackend.when('GET', '/api/Event/1').respond({ id: 1 });
+        var eventpromise = restEventData.getEvent(1);
+        $httpBackend.flush();
+        expect(eventpromise.then).toBeDefined();
+    }));
 
-        it('should issue a GET request to /api/event/1 when id is 1', inject(function (restEventData, $httpBackend) {
-            $httpBackend.when('GET', '/api/Event/1').respond({ id: 1 });
-            var eventpromise = restEventData.getEvent(1);
-            $httpBackend.flush();
-            expect(eventpromise.then).toBeDefined();
-        }))
-    })
+    it('should issue a POST when saving', inject(function (restEventData, $httpBackend) {
+        $httpBackend.when('POST', '/api/Event/999').respond(200);
+        var event = { id:0, name: 'My Event'}
+        var eventpromise = restEventData.save(event);
+        $httpBackend.flush();
+        expect(eventpromise.then).toBeDefined();
+    }));
 
+    it('should issue a GET request to /api/Event getting all events', inject(function (restEventData, $httpBackend) {
+        $httpBackend.expectGET('/api/Event').respond(200);
+        var event = { id: 0, name: 'My Event' }
+        var eventpromise = restEventData.getEvents();
+        $httpBackend.flush();
+        expect(eventpromise.then).toBeDefined();
+    }));
 });

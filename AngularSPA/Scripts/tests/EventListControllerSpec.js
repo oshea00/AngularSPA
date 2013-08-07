@@ -8,13 +8,13 @@
 
 describe('EventListController Spec', function () {
     var scope;
-    var $controllerConstructor;
+    var controller;
 
     beforeEach(module('myApp'));
 
     beforeEach(inject(function ($controller, $rootScope) {
         scope = $rootScope.$new();
-        $controllerConstructor = $controller;
+        controller = $controller;
     }));
 
     it('should set the scope events to the result of restEventData.getAllEvents', function () {
@@ -24,7 +24,7 @@ describe('EventListController Spec', function () {
         mockRestEventData = sinon.stub({ getEvents: function () { } });
         mockRestEventData.getEvents.returns(mockEvents);
 
-        var ctrl = $controllerConstructor('EventListController',
+        var ctrl = controller('EventListController',
             { $scope: scope, restEventData: mockRestEventData });
 
         expect(scope.events).toBe(mockEvents);

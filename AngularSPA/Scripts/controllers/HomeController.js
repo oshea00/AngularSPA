@@ -1,7 +1,7 @@
 ﻿'use strict';
 
 myApp.controller('HomeController',
-    function HomeController($scope, restEventData, $log, $anchorScroll) {
+    function HomeController($scope) {
 
         $scope.name = "Mike";
 

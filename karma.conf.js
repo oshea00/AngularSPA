@@ -22,6 +22,7 @@ files = [
   'AngularSPA/AngularSPA/Scripts/services/*.js',
   'AngularSPA/AngularSPA/Scripts/directives/*.js',
   'AngularSPA/AngularSPA/Scripts/controllers/*.js',
+  'AngularSPA/AngularSPA/Scripts/filters/*.js',
   'AngularSPA/AngularSPA/Scripts/tests/*.js',
   'AngularSPA/AngularSPA/Scripts/sinon-1.7.3.js'
 ];
