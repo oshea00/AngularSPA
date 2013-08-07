@@ -22,8 +22,7 @@
         it('should call calculator.add with 1 and 2', inject(function (wordcalc) {
             wordcalc.addWord(1, 2);
 
-            expect(mockCalculator.add.args[0][0]).toEqual(1);
-            expect(mockCalculator.add.args[0][1]).toEqual(2);
+            expect(mockCalculator.add.args[0]).toEqual([1, 2]);
 
         }));
 
