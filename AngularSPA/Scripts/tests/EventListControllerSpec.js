@@ -29,6 +29,8 @@ describe('EventListController Spec', function () {
 
         expect(scope.events).toBe(mockEvents);
 
+        expect(scope.foo(1, 2)).toBe(3);
+
     });
 
 
