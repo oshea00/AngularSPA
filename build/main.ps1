@@ -64,7 +64,7 @@ task test -depends compile {
 	}
   
         pushd ..
-        karma start --reporters teamcity --single-run
+        exec -cmd { karma start --reporters teamcity --single-run } -ErrorMessage "Karma Tests Failed"
         popd
 	Write-Host "Finished Running Tests"
 }
