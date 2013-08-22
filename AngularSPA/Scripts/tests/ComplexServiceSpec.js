@@ -19,16 +19,16 @@
             });
         });
 
-        it('should call calculator.add with 1 and 2', inject(function (wordcalc) {
+        it('should call calculator.add with 1 and 2', inject(function  (wordcalc) {
             wordcalc.addWord(1, 2);
             sinon.assert.calledWith(mockCalculator.add, 1, 2);
         }));
 
 
-        it('should return one plus two = 3', inject(function (wordcalc) {
+        it('should return one plus two = 3', inject(function (wordcalc) { 
             mockCalculator.add.returns(3);
             var result = wordcalc.addWord(1, 2);
-
+            debugger;
             expect(result).toEqual('one plus two = 3');
         }));
 

@@ -1,0 +1,34 @@
+-- Install Chocolatey
+
+1. open CMD as Administrator
+2. run: 
+@powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%systemdrive%\chocolatey\bin
+
+-- Install PhantomJS
+
+1. Open new console as Adminstrator
+2. run:
+chocolatey install phantomjs
+
+note: this will install to C:\PhantomJS
+
+
+-- Install Node.js
+
+1. Copy \\tac-nas001\gadshare\_developerinstalls\node\*.msi to e:\temp
+2. open console as administrator
+3. Run the MSI in e:\temp
+
+-- Install Karma
+
+1. Open new console as Adminstrator
+2. Run:
+npm config set proxy http://192.168.26.50:8080
+npm --prefix "C:\Program Files\npm" -g install karma
+npm --prefix "C:\Program Files\npm" -g install karma-teamcity-reporter
+
+-- restart build agent service
+
+
+
+

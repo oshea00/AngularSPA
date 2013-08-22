@@ -16,7 +16,9 @@ properties {
 	$testrpt_dir = "$build_dir\TestReports"
 	$testrpt_name = "TestReport"
 	$runner = "$tool_dir\Machine.Specifications.0.5.9\tools\mspec-x86-clr4.exe"
-
+    $env:PHANTOMJS_BIN = "C:\PhantomJS\PhantomJS.exe"
+    $karma = "C:\Program Files\npm\karma.cmd"
+	
 	$stage_dir = "$build_output_dir\stage"
 	$package_dir = "$build_dir\package\"
 	$docs_dir = "$base_dir\docs"
@@ -24,7 +26,7 @@ properties {
         $nuget = "$base_dir\.nuget\NuGet.exe"		
 }
 
-task default -depends deploy
+task default -depends test
 
 task recreate_build_dir {
 
@@ -64,21 +66,8 @@ task test -depends compile {
 	}
   
         pushd ..
-        exec -cmd { karma start --reporters teamcity --single-run } -ErrorMessage "Karma Tests Failed"
+        exec { & $karma start --reporters teamcity --single-run } -ErrorMessage "Karma Tests Failed"
         popd
 	Write-Host "Finished Running Tests"
 }
 
-task deploy -depends test {
-
-    $nupkg = "$stage_service_dir\"+@(dir $stage_service_dir\*.nupkg)[0].Name
-
-    if ($update_nuget) {
-        $nupkg = "$stage_service_dir\"+@(dir $stage_service_dir\*.nupkg)[0].Name
-        Exec { & $nuget push $nupkg 46b925a1-4e22-4266-83ed-8fb4c32bd38f -Source http://tac-app270/GADGet/api/V2/package }
-    }
-
-	if (Test-Path $package_dir) { Remove-Item -Recurse -Force $package_dir }
-	New-Item $package_dir -ItemType directory | Out-Null
-
-}
